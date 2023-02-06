@@ -3,7 +3,7 @@
 
 
 
-## Pre-commit 
+## Pre-commit
 
 1- Install pre commit with Pip:
 
@@ -29,10 +29,14 @@ repos:
       - id: pmd
 ```
 
-In this particular example we have 5 hooks:
+In this particular example we have 3 hooks:
 
 **check-added-large-files**: Check for larger files in the repo
-**end-of-file-fixer**: Check and fix the EOF. 
 **trailing-whitespace**: Check and fix empty spaces at the end of files.
-**findbugs**: Use FindBugs to detect issues and bugs.
-**pmd**: Check Java Code for good practices.
+
+
+3- First time using the commit, you need to run
+```$ pre-commit install```
+
+4- You're ready to go :)
+Use https://pre-commit.com/ to check available hooks or revisions :)

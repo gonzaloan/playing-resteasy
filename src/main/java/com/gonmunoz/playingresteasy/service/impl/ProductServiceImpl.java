@@ -9,14 +9,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ProductServiceImpl implements ProductService {
-
     private static List<Product> products = Collections.emptyList();
     @Override
     public Product save(Product product) {
         products.add(product);
         return product;
     }
-
     @Override
     public Product update(Product product) {
         products = products.stream()
@@ -24,7 +22,6 @@ public class ProductServiceImpl implements ProductService {
                 .collect(Collectors.toList());
         return product;
     }
-
     @Override
     public List<Product> listAll() {
         return products;

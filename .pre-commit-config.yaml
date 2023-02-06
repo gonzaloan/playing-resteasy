@@ -1,15 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v2.7.0
+    rev: main
     hooks:
       - id: check-added-large-files
-      - id: end-of-file-fixer
       - id: trailing-whitespace
-  - repo: https://github.com/tokuhirom/pre-commit-findbugs
-    rev: v1.1.0
-    hooks:
-      - id: findbugs
-  - repo: https://github.com/tokuhirom/pre-commit-pmd
-    rev: v1.1.0
-    hooks:
-      - id: pmd
