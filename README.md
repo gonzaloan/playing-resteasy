@@ -29,7 +29,7 @@ repos:
       - id: pmd
 ```
 
-In this particular example we have 3 hooks:
+In this particular example we have 2 hooks:
 
 **check-added-large-files**: Check for larger files in the repo
 **trailing-whitespace**: Check and fix empty spaces at the end of files.
